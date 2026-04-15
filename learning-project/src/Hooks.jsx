@@ -1,11 +1,12 @@
 import { useState } from "react";
-
-
 import "./assets/hooks.css";
+import Card from './components/Card';
+
 
 function Hooks() {
   const [Counter, setCounter] = useState(15);
   const [Text, setText] = useState("type Of Number");
+  const [show, setShow] = useState(false);
   // add Value
   const addVal = () => {
     if (Counter < 20) {
@@ -30,6 +31,12 @@ function Hooks() {
       setText("Odd Number");
     }
   };
+    const Showtailwind = () => {
+    setShow(true);
+  };
+  const hideTailwind = () => {
+    setShow(false)
+  };
   return (
     <>
       <h2>Counter value: {Counter}</h2>
@@ -45,8 +52,11 @@ function Hooks() {
       <button className="btnDesign border-2 border-solid" onClick={EvenChecker}>
         {Text}
       </button>
+      <button className="btnDesign border-2 border-solid" onClick={Showtailwind}>Show Tailwind</button>
+      <button className="btnDesign border-2 border-solid" onClick={hideTailwind}>Hide Tailwind</button>
+      {show && <Card  username="Muhammad Hasham"/>}
+      {show && <Card  username="Second Profile"/>}
     </>
   );
 }
-
 export default Hooks;

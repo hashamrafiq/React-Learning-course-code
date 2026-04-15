@@ -5,7 +5,7 @@ const username  = "React Counter"
     <>
     <h1 className="text-black-800 text-5xl font-bold">{username}</h1>    
     <button className="btnDesign">
-        Reset Value
+        Counter Value
       </button>
     </>
   )
