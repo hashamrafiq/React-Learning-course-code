@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.BtnWrapper{
+    height: 100vh;
+    background: black;
+}

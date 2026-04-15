@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./assets/hooks.css";
-import Card from './components/Card';
-
+import Card from "./components/Card";
 
 function Hooks() {
   const [Counter, setCounter] = useState(15);
@@ -31,11 +30,11 @@ function Hooks() {
       setText("Odd Number");
     }
   };
-    const Showtailwind = () => {
+  const Showtailwind = () => {
     setShow(true);
   };
   const hideTailwind = () => {
-    setShow(false)
+    setShow(false);
   };
   return (
     <>
@@ -52,10 +51,36 @@ function Hooks() {
       <button className="btnDesign border-2 border-solid" onClick={EvenChecker}>
         {Text}
       </button>
-      <button className="btnDesign border-2 border-solid" onClick={Showtailwind}>Show Tailwind</button>
-      <button className="btnDesign border-2 border-solid" onClick={hideTailwind}>Hide Tailwind</button>
-      {show && <Card  username="Muhammad Hasham"/>}
-      {show && <Card  username="Second Profile"/>}
+      <button
+        className="btnDesign border-2 border-solid"
+        onClick={Showtailwind}
+      >
+        Show Tailwind
+      </button>
+      <button
+        className="btnDesign border-2 border-solid"
+        onClick={hideTailwind}
+      >
+        Hide Tailwind
+      </button>
+      {show && (
+        <Card
+          username="Muhammad Hasham"
+          description="Same Card With Different username"
+          linkText="Click Me"
+          mailText="hr@gmail.com"
+          contectForm="Explore More"
+        />
+      )}
+      {show && (
+        <Card
+          username="Second Profile"
+          description="Same Card With Different username"
+          linkText="Visit Me"
+          mailText="extra@gmail.com"
+          contectForm="Explore More"
+        />
+      )}
     </>
   );
 }
