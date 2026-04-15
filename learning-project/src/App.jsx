@@ -1,10 +1,12 @@
+import "./assets/hooks.css";
 function App() {
-const username  = "Muhammad Hasham"
+const username  = "React Counter"
   return (
     <>
-    <h1>You can access this link with {username}</h1>
-    <p>new paragraph nothing some extra </p>
-    
+    <h1 className="text-black-800 text-5xl font-bold">{username}</h1>    
+    <button className="btnDesign">
+        Reset Value
+      </button>
     </>
   )
 }
