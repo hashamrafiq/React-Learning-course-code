@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-.BtnWrapper{
-    height: 100vh;
+.btnBgBody{
+    height: calc(100vh - 0px);
     background: black;
+    width: 100vw;
 }

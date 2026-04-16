@@ -8,6 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: auto;
+    height: calc(100vh - 0px)
 }
 .btnDesign{
     border-radius: 10px;

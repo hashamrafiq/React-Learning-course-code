@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./assets/hooks.css";
 import Card from "./components/Card";
 
-function Hooks() {
+function Hooks({onShowTheme}) {
   const [Counter, setCounter] = useState(15);
   const [Text, setText] = useState("type Of Number");
   const [show, setShow] = useState(false);
@@ -62,6 +62,12 @@ function Hooks() {
         onClick={hideTailwind}
       >
         Hide Tailwind
+      </button>
+      <button
+        className="btnDesign border-2 border-solid"
+        onClick={onShowTheme}
+      >
+        Go to Theme Switcher
       </button>
       {show && (
         <Card
