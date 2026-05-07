@@ -35,9 +35,7 @@ function App() {
             type="text"
             value={password}
             className="outline-none bg-white w-full py-2 px-4"
-            placeholder="password"
-            readOnly
-          />
+            placeholder="password" readOnly />
           <button className="outline-none bg-blue-700 text-white px-3 py-0.5 ">
             Copy
           </button>

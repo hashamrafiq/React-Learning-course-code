@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.btnBgBody{
+    height: calc(100vh - 0px);
+    background: black;
+    width: 100vw;
+}

@@ -38,7 +38,7 @@ function Hooks({onShowTheme}) {
   };
   return (
     <>
-      <h2>Counter value: {Counter}</h2>
+      <h2 className="text-3xl">Counter value: {Counter}</h2>
       <button className="btnDesign border-2 border-solid" onClick={addVal}>
         Add Value
       </button>
